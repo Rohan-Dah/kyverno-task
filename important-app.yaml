@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: important-app
+  namespace: delta
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  - name: redis
+    image: redis:latest
+  - name: postgres
+    image: postgres:latest
