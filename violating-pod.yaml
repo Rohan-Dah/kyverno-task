@@ -8,5 +8,5 @@ spec:
     image: nginx:latest
   - name: redis
     image: redis:latest
-  - name: postgres
+  - name: postgres #Violating pod
     image: postgres:latest
