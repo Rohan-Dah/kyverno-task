@@ -4,7 +4,7 @@
 ### 1) Write a Kyverno policy that limits the amount of containers that can be in a single Pod. The policy should check all pods to ensure that they have no more than two containers. You should show a case where a resource is blocked due to policy violation and another case where a resource is successfully created.
 
 ### Step 1: Setting up minikube for kubernetes cluster
-Before deploying kyverno, we need to create a local kubernetes cluster using minikube. I followed the below documentation for the same:
+Before deploying kyverno, we need to create a local kubernetes cluster using minikube. Below documentation can be followed for the same:
 
 https://minikube.sigs.k8s.io/docs/start/ 
 
