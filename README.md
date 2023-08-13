@@ -2,6 +2,7 @@
 # Kyverno: Policy Exceptions 2.0 Tasks
 
 ### 1) Write a Kyverno policy that limits the amount of containers that can be in a single Pod. The policy should check all pods to ensure that they have no more than two containers. You should show a case where a resource is blocked due to policy violation and another case where a resource is successfully created.
+<hr>
 
 ### Step 1: Setting up minikube for kubernetes cluster
 Before deploying kyverno, we need to create a local kubernetes cluster using minikube. Below documentation can be followed for the same:
@@ -224,10 +225,7 @@ pod/compliant-pod created
 ```
 
 Hence the policy is working..
-
-
-
-
+<hr>
 
 ### 2) Use the policy you created in the 1st step to write a Kyverno policy exception that grants an exception to a Pod or Deployment named important-app which will be created in the delta namespace. You should show a case where a resource is successfully created although it violates the policy.
 
@@ -295,7 +293,7 @@ Output
 pod/important-app created
 ```
 
-As we can see, the above pod named important-app has three containers that must violates the policy, but due to policyexception it is not.
+As we can see, the above pod named important-app has three containers that must violate the policy, but due to policyexception it is not.
 
 Thank you
 
